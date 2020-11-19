@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1080692434993",
+    "firebase_url": "https://picbee-c0f91.firebaseio.com",
+    "project_id": "picbee-c0f91",
+    "storage_bucket": "picbee-c0f91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080692434993:android:795aeb0c61cfc74c82cd10",
+        "android_client_info": {
+          "package_name": "edu.uco.raddepalli.map2020.PicBee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080692434993-rplou7dbkd8k60jdidtkq7dvchoacqg9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.uco.raddepalli.map2020.PicBee",
+            "certificate_hash": "d47b14570feb0c69ff0277369f3b34c7c24ac717"
+          }
+        },
+        {
+          "client_id": "1080692434993-bfjdl243v1rvrbv3u2mqak3o0vq4get8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDupu6TLcPAv86aubAFbIIrio-o0UEjZUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080692434993-bfjdl243v1rvrbv3u2mqak3o0vq4get8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
