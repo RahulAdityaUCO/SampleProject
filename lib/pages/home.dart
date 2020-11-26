@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
     if (Platform.isIOS) getiOSPermission();
 
     _firebaseMessaging.getToken().then((token) {
-      // print("Firebase Messaging Token: $token\n");
+      print("Firebase Messaging Token: $token\n");
       usersRef
           .document(user.id)
           .updateData({"androidNotificationToken": token});
@@ -85,11 +85,11 @@ class _HomeState extends State<Home> {
       // onLaunch: (Map<String, dynamic> message) async {},
       // onResume: (Map<String, dynamic> message) async {},
       onMessage: (Map<String, dynamic> message) async {
-        // print("on message: $message\n");
+        print("on message: $message\n");
         final String recipientId = message['data']['recipient'];
         final String body = message['notification']['body'];
         if (recipientId == user.id) {
-          // print("Notification shown!");
+          print("Notification shown!");
           SnackBar snackbar = SnackBar(
               content: Text(
             body,
@@ -97,7 +97,7 @@ class _HomeState extends State<Home> {
           ));
           _scaffoldKey.currentState.showSnackBar(snackbar);
         }
-        // print("Notification NOT shown");
+        print("Notification NOT shown");
       },
     );
   }
@@ -106,7 +106,7 @@ class _HomeState extends State<Home> {
     _firebaseMessaging.requestNotificationPermissions(
         IosNotificationSettings(alert: true, badge: true, sound: true));
     _firebaseMessaging.onIosSettingsRegistered.listen((settings) {
-      // print("Settings registered: $settings");
+      print("Settings registered: $settings");
     });
   }
 
@@ -228,7 +228,7 @@ class _HomeState extends State<Home> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Text(
-              'FlutterShare',
+              'PicBee',
               style: TextStyle(
                 fontFamily: "Signatra",
                 fontSize: 90.0,
